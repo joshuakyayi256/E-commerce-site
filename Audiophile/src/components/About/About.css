@@ -1,0 +1,83 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 1.2rem;
+    padding-bottom: 6rem;
+}
+
+.about__img {
+    background-image: url('../../assets/products/image-best-gear.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about .about__details h4 {
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 39px;
+    font-size: 28px;
+    color: black;
+}
+
+.about .about__details p {
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.about .about__details span {
+    color: orange;
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+    .about {
+        padding:10% 5%;
+    }
+    .about__img {
+        background-image: url('../../assets/products/image-best-tablet-gear.jpg');
+    }    
+    
+    .about .about__details  {
+        padding: 10px;
+    }
+
+    .about .about__details p{
+        max-width: 600px;
+    }
+    .about .about__details h4{
+        font-size: 40px;
+    }
+
+}
+
+/* For Desktop */
+@media only screen and (min-width: 1024px) {
+
+    .about{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .about__img {
+        height: 600px;
+        /* width: 540px; */
+        background-image: url('../../assets/products/image-best-desktop-gear.jpg');
+    } 
+
+    .about__details {
+        text-align: left;
+    }
+}

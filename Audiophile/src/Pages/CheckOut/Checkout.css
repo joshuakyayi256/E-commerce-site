@@ -1,0 +1,203 @@
+.checkout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.2rem;
+    padding-bottom: 6rem;
+  }
+  
+  .container{
+    display: grid;
+    gap: 4rem;
+  }
+  .checkout > div {
+    padding-bottom: 20px;
+  }
+  
+  .checkout h3 {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #D87D4A;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  
+  .checkout input[type="text"], 
+  .checkout input[type="tel"],
+  .checkout input[type="email"]{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .checkout label, .payment-method label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: -0.2px;
+    font-size: 12px;
+  }
+  .e-money, .cash-on-delivery{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+  
+  .e-money, .cash-on-delivery {
+    display: flex;
+    align-items: center;
+  }
+  
+  .e-money input[type="radio"], .cash-on-delivery input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .e-money input[type="radio"]:checked, .cash-on-delivery input[type="radio"]:checked {
+    background-color: #D87D4A;
+    border-color: #D87D4A;
+    color: white;
+  }
+  
+  .cash-on-delivery-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .cash-on-delivery-info p {
+    width: 75%;
+  }
+  
+  .checkout .go-back-link {
+    margin-top: 30px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item-details {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .totals-summary .total {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .product-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .summary-container {
+    height: auto;
+    border-radius: 10px;
+  } 
+      
+  .summary-container p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .summary-container .checkout-summary h2 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    margin-bottom: 40px;
+  }
+  .totals-summary{
+    margin-top: 30px;
+  }
+  
+  .cart-item .item-quantity {
+    color: #D87D4A;
+  }
+  
+  .bold {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .bold .grand-total {
+    color: #D87D4A;
+  }
+  
+  .total {
+    margin-bottom: 15px;
+  }
+  
+  .total p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  .checkout {
+    background-color: #F1F1F1;
+    /* padding: 0 10%; */
+  }
+  
+  .checkout-container, .summary-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Tablets and Desktop*/
+  @media only screen and (min-width: 768px){
+    .checkout {
+      padding:  5%;
+      padding-bottom: 10%;
+    }
+  
+    .payment-method {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two columns */
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .billing-info, .grid-display, .eMoney-details{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .container {
+      display: grid;
+      grid-template-columns: 66.6% 33.3%;
+      grid-gap: 30px;
+      padding-top: 50px;
+    }
+  
+    .cash-on-delivery-info{
+    gap: 40px;
+  }
+  
+  
+  }
+  

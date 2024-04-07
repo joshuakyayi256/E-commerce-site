@@ -1,0 +1,90 @@
+.category {
+    margin-top: 100px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .category__content {
+      width: 100%;
+      padding: 20px;
+      height: 200px;
+      background-color: #F1F1F1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+      border-radius: 10px;
+  }
+  
+  .category img {
+    position: absolute;
+    top: -50px;
+    left: 30%;
+    height: 150px;
+  }
+  
+  .category__title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .category .category__content .shop__button span {
+    font-size: 14px;
+    font-weight: 200;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .category .category__content .shop__button span:hover{
+    text-decoration: underline; 
+  }
+  .arrow{
+    color: #D87D4A;
+  }
+  
+  .arrow:hover {
+    color: #FBAF85;
+  }
+  
+  .category .category__content .shop__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Tablets */
+  @media only screen and (min-width: 768px)  {
+    .category {
+      flex-direction: row;
+      gap: 15px;
+      padding: 5%;
+    }
+  
+    .category img {
+      left: 20%;
+    }
+  }
+  
+  /* For Desktop */
+  @media only screen and (min-width: 1024px) {
+    .category {
+      gap: 20px;
+      padding: 10%;
+    }
+  
+    .category img {
+      position: absolute;
+      top: -70px;
+      left: 30%;
+      height: 160px;
+    }
+  }

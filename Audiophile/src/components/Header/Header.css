@@ -1,0 +1,136 @@
+.header {
+    position: relative;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    height: 100px;
+    position: relative;
+}
+
+.active {
+  color: #DB7D4A; 
+}
+.header .navbar {
+  position: absolute;
+  left: 0;
+  bottom: -650px;
+  background-color: white;
+  width: 100%;
+  color: black;
+  z-index: 1;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.header__nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .header a:hover {
+    color: #DB7D4A;
+  }
+
+  .header .cart {
+    position: relative;
+    position: absolute;
+    right: -10px;
+    top: 115px;
+    background-color: white;
+    width: 100%;
+    color: black;
+    z-index: 1;
+    margin: 20px;
+    width: 95%;
+  }
+  .header__cart {
+    position: relative;
+  }
+
+  .cart__count {
+    position: absolute;
+    top: -10px; 
+    right: -8px; 
+    background-color: #DB7D4A; 
+    color: #fff;
+    border-radius: 50%; 
+    padding: 2px 4px; 
+    font-size: 10px;
+    font-weight: 900; 
+  }
+
+@media (max-width: 1023px){
+    .header .header__nav {
+        display: none;
+    }
+
+    .logo{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+  }
+
+  /* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header .navbar {
+    position: absolute;
+    left: 0;
+    bottom: -280px;
+    background-color: white;
+    width: 100%;
+    color: black;
+    z-index: 2;
+  }
+
+  .header .cart{
+    width: 380px;
+    left : 350px;
+    top: 114px;
+  }
+}
+
+  /* For desktop */
+  @media (min-width: 1024px){
+    .header .header__menu {
+        display: none;
+    }
+
+    .header {
+      padding: 0 10%;
+    }
+
+    .header .cart{
+      width: 450px;
+      left : 294px;
+      top: 140px;
+    }
+  }

@@ -1,17 +1,32 @@
+import { CartProvider } from './Context/CartContext';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import EarphonesPage from './Pages/Categorypages/EarphonesPage';
+import Checkout from './Pages/Checkout/Checkout';
+import Home from './Pages/Home';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import './App.css'
-import Header from './Components/Nav'
+import HeadphonesPage from './Pages/Categorypages/HeadphonesPage';
+import SpeakersPage from './Pages/Categorypages/SpeakersPage';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
+//import CategoryPage from './Pages/Categorypages/CategoryPage';
 
-function App() {
+const App = () => {
   return (
-    <>
-    <div style={{
-      backgroundImage: "url(./Audiophile/src/assets/Hero.png)",
-      height: "100vh",
-      backgroundSize: "cover", 
-      }} >
-       < Header />
-    </div>
-    </>
+    <CartProvider>
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/headphones" element={<HeadphonesPage />} />
+          <Route path="/speakers" element={<SpeakersPage/>} />
+          <Route path="/earphones" element={<EarphonesPage />} />
+          <Route path="/product/:slug" element={<ProductDetails/>} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+        <Footer/>
+      </Router>
+    </CartProvider>
   )
 }
 

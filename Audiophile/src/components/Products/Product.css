@@ -1,0 +1,176 @@
+.product {
+    margin-top: 50px;
+    padding: 15px;
+    display: grid;
+    gap: 2rem;
+}
+.product__one__content {
+    color: white;
+    background-color: #D87D4A;
+    background-image: url('../../assets/products/pattern-circles.svg');
+    background-position: center -90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    height: 600px;
+}
+.product .product__one__content img{
+    height: 200px;
+    width: 140px;   
+}
+
+.product__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 1.29px;
+}
+
+.product__description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 280px;
+}
+
+.product__two__content{
+    height: 330px;
+    background-image: url('../../assets/products/image-speaker-zx7.jpg');
+    margin-top: 20px;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.product__two__content .product__title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.product__three__content .img{
+    background-image: url('../../assets/products/image-product-earphones-yx1.jpg');
+    height: 200px;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product__three__content{
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.product__three__details {
+    background-color: #F1F1F1;
+    height: 200px;
+    padding-left: 20px;
+    text-align: left;
+    border-radius: 5px;
+}
+.product__three__details .title {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px)  {
+    .product {
+        padding: 0 5%;
+    }
+
+    .product__one__content {
+        background-position: center -130px;
+    }
+
+    .product__two__content {
+        background-image: url('../../assets/products/image-speaker-tablet-zx7.jpg');
+        padding-left: 30px;
+    }
+
+    .product__three__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        height: 320px;
+    }
+
+    .product__three__content .img {
+        width: 50%;
+        padding: 0;
+    }
+
+    .product__three__details {
+        width: 50%;
+    }
+}
+
+
+    
+/* For Desktop */
+@media only screen and (min-width: 1024px) {
+    .product{
+        padding: 0 10%;
+    }
+
+    .product__one__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 50px;
+        align-items: center;
+        padding: 50px;
+        text-align: left;
+        width: 100%;
+        height: 560px;
+        position: relative;
+    }
+
+    .product__details {
+        width: 40%;
+    }
+
+    .product .product__one__content img{
+        height: 493px;
+        width: 410px;
+        margin-top: 100px;
+    }
+
+    .product__description {
+        max-width: 350px;
+    }
+
+    .product__title {
+        font-size: 56px;
+        line-height: 58px;
+        max-width: 300px;
+        letter-spacing: 2px;
+    }
+
+    .product__two__content{
+        height: 400px;
+        background-image: url('../../assets/products/image-speaker-desktop-zx7.jpg');
+        padding-left: 30px;
+    }
+
+    .product__three__content{
+        height: 400px;
+    }
+}
